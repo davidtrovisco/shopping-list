@@ -10,7 +10,6 @@ html, body {
     flex-direction: column;
     max-width: 320px;
     margin: 30px auto;
-    align-items: center; /* Adicionando esta linha para centralizar o conteúdo horizontalmente */
 }
 
 img {
@@ -41,7 +40,19 @@ button {
     font-family: 'Rubik', sans-serif;
 }
 
-.center-text {
-    text-align: center; /* Para centralizar o texto */
-    font-family: 'Rubik', sans-serif; /* Definindo a fonte */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ul li {
+    font-size: 20px;
+    background-color: #FFFDF8;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
 }
