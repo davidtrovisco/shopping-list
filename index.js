@@ -15,9 +15,7 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
-    
     push(shoppingListInDB, inputValue)
-    
     clearInputFieldEl()
 })
 
@@ -28,24 +26,8 @@ onValue(shoppingListInDB, function(snapshot) {
     
     for (let i = 0; i < itemsArray.length; i++) {
         let currentItem = itemsArray[i]
-        // Challenge: Make two let variables:
-        // currentItemID and currentItemValue and use currentItem to set both of
-        // them equal to the correct values.
         let currentItemID = currentItem[0]
         let currentItemValue = currentItem[1]
-        
         appendItemToShoppingListEl(currentItemValue)
     }
 })
-
-function clearShoppingListEl() {
-    shoppingListEl.innerHTML = ""
-}
-
-function clearInputFieldEl() {
-    inputFieldEl.value = ""
-}
-
-function appendItemToShoppingListEl(itemValue) {
-    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
-}
