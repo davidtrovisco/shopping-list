@@ -31,3 +31,18 @@ onValue(shoppingListInDB, function(snapshot) {
         appendItemToShoppingListEl(currentItemValue)
     }
 })
+<<<<<<< HEAD
+=======
+
+function clearShoppingListEl() {
+    shoppingListEl.innerHTML = ""
+}
+
+function clearInputFieldEl() {
+    inputFieldEl.value = ""
+}
+
+function appendItemToShoppingListEl(itemValue) {
+    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
+}
+>>>>>>> b40252c0801f4f7b55d73c4beea4bf0c720f3dc9
